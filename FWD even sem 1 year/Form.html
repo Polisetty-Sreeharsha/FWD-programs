@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>1st  Html form</title>
+	
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: Lightblue;
+      padding: 30px;
+    }
+
+</style>
+</head>
+<body>
+<form>
+	<!--Text input-->
+	<label><i>Full Name<i></label><br>
+	<input type="text" name="name" required><br><br>
+
+	<label>Email</label><br>
+	<input type="text" name="mail" required><br><br>
+	
+	<label>Password</label><br>
+	<input type="text" name="password" required><br><br>
+	
+	<!--Radio buttons-->
+	<label>Gender</label><br>
+	<input type="radio" name="Gender" value="male">MALE
+	<input type="radio" name="Gender" value="female">FEMALE<br><br>
+	<!--Check box-->
+	<label>Skills</label><br>
+	<input type="checkbox" name="Skill1">JAVA
+	<input type="checkbox" name="Skill2">HTML
+	<input type="checkbox" name="Skill3">C
+	<input type="checkbox" name="Skill4">DSA<br><br>
+	<!--Dropdown list-->
+	<label>Course</label><br>
+	<select name="Course">
+	<option> Java</option><br>
+	<option>DSA</option><br>
+	<option>Maths</option><br>
+	</select><br><br>
+	<!--button-->
+	<input type="Submit" value="Register">
+	<input type="Reset" value="Clear">
+
+</form>
+		
+</body>
+</html>

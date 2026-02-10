@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+<style>
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 9px;
+  background-color:#e3f5;
+}
+  body{
+  background-color:#e3f2fd;
+  }
+  h1{
+  text-align:center;
+  }
+input:focus {
+  outline: 2px solid blue;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Student Registration Form</h1>
+</header>
+
+<main>
+<form>
+  <label>Name</label>
+  <input type="text" required>
+
+  <label>Email</label>
+  <input type="email" required>
+
+  <label>Mobile Number</label>
+  <input type="text" pattern="[0-9]{10}" required
+         title="Enter exactly 10 digits">
+
+  <label>Password</label>
+  <input type="password" minlength="8" required>
+
+  <label>Confirm Password</label>
+  <input type="password" minlength="8" required>
+
+  <button type="submit">Register</button>
+</form>
+</main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Registration form of games</title>
+	<style>
+	form{
+	 max-width:400px;
+	 margin: auto;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 10px;
+	 border: 2px solid green;
+	 border-radius:5px;
+	 padding:8px;
+	 background-color:#e3ff00;
+	}
+	body{
+	  background-color:#e3f2fd;
+	  font-family: Geogria;
+	 }
+	 h1{
+	  text-align:center;
+	}
+	 input:focus{
+	 outline:blue;
+	}
+	</style>
+</head>
+	<body>
+	<h1>Registration Form Of Games</h1>
+	<form>	
+	 <label>Name</label>
+	<input type="text" placeholder="Enter name"required>
+	 <label>Email</label>
+	<input type="email" placeholder="Enter email"required>
+	 <label>Password</label>
+	<input type="password" pattern="[0-9]{10}"required>
+	<button type="Submit">submit</button>
+	</form>
+\</body>
+</html>

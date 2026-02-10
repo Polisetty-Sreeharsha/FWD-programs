@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Booking Form</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border: 2px solid #d81b60;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      color: #880e4f;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ad1457;
+      border-radius: 5px;
+    }
+
+    input:focus {
+      outline: 2px solid #d81b60;
+    }
+
+    button {
+      background-color: #d81b60;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="text-align:center">Event Booking Form</h1>
+</header>
+
+<main>
+<form>
+  <label>Name</label>
+  <input type="text" required>
+
+  <label>Email</label>
+  <input type="email" required>
+
+  <label>Date of Event</label>
+  <input type="date" required min="2026-01-01">
+
+  <label>Number of Seats</label>
+  <input type="number" required>
+
+  <button type="submit">Book Event</button>
+</form>
+</main>
+
+</body>
+</html>
